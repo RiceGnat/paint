@@ -1,0 +1,74 @@
+.ps-container {
+    overflow: hidden !important;
+}
+
+.ps-container .ps-scrollbar-x-rail {
+    position: absolute; /* please don't change 'position' */
+    bottom: 0; /* there must be 'bottom' for ps-scrollbar-x-rail */
+    left: 0;
+    height: 10px;
+	background-color: #f0f0f0;
+    /* opacity: 0;
+    filter: alpha(opacity = 0); */
+    -webkit-transition: background-color .2s, opacity .4s;
+    transition: background-color .2s, opacity .4s;
+}
+
+.ps-container .ps-scrollbar-y-rail {
+    position: absolute; /* please don't change 'position' */
+    right: 0; /* there must be 'right' for ps-scrollbar-y-rail */
+    top: 0;
+    width: 10px;
+	background-color: #f0f0f0;
+    /* opacity: 0;
+    filter: alpha(opacity = 0); */
+    -webkit-transition: background-color .2s, opacity .4s;
+    transition: background-color .2s, opacity .4s;
+}
+
+.ps-container .ps-scrollbar-x {
+    position: absolute; /* please don't change 'position' */
+    bottom: 0; /* there must be 'bottom' for ps-scrollbar-x */
+    height: 10px;
+    background-color: #c0c0c0;
+    -webkit-transition: background-color .4s;
+    transition: background-color .4s;
+}
+
+.ps-container .ps-scrollbar-x-rail:hover .ps-scrollbar-x {
+    background-color: #9587a5;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+.ps-container .ps-scrollbar-x-rail.in-scrolling .ps-scrollbar-x {
+	background-color: #beaece;
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
+}
+
+.ps-container .ps-scrollbar-y {
+    position: absolute; /* please don't change 'position' */
+    right: 0; /* there must be 'right' for ps-scrollbar-y */
+    width: 10px;
+    background-color: #c0c0c0;
+    -webkit-transition: background-color .4s;
+    transition: background-color .4s;
+}
+
+.ps-container .ps-scrollbar-y-rail:hover .ps-scrollbar-y {
+    background-color: #9587a5;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+.ps-container .ps-scrollbar-y-rail.in-scrolling .ps-scrollbar-y {
+	background-color: #beaece;
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
+}
+
+.ps-container .inactive {
+	opacity: 0;
+	pointer-events: none;
+}
